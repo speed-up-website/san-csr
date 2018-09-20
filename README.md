@@ -5,6 +5,6 @@ This app generates the key pair using the WebCrypto API and web browser. Then it
 
 The private key, CSR everything is generated locally in your computer and never transmitted over the internet.
 
-Credits go to the <a href="https://github.com/PeculiarVentures/csrhelp" target="_blank">'csrhelp'</a> app. 'csrhelp' is suitable for one domain only. We have done a few modifications to make it compatible with multiple domains so that you can use the CSR for a SAN certificate.
+Credits go to the <a href="https://github.com/PeculiarVentures/csrhelp" target="_blank">'csrhelp'</a> app. 'csrhelp' is suitable for one domain. We have done a few modifications to make it compatible with multiple domains so that you can use the CSR for a SAN certificate.
 
 If you are looking for Free SSL certificates, please visit <a href="https://freessl.tech" target="_blank">FreeSSL.tech</a>. The SSL certificates generated and renewed by FreeSSL.tech are always free. FreeSSL.tech uses the ACME V2 API of Let's Encrypt. So, you can get wildcard SSL too, for FREE of cost!
