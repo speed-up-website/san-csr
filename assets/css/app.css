@@ -516,3 +516,111 @@ md-tooltip {
 md-progress-linear {
   position:absolute;
 }
+
+/**
+* Hide when Angular is not yet loaded and initialized
+*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+display: none !important;
+}
+
+nav a.navbar-brand>img{display:inline;margin-left:90px;margin-right:4px;margin-top:-2px}
+
+.dropdown:hover .dropdown-menu {
+display: block;    
+}
+
+/* Facebook share, like and Twitter button */
+
+body {		    
+    font-family: Helvetica;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+#fb-share-button {
+	margin-top: 13px;
+    background: #3b5998;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 1px 5px;
+    display: inline-block;
+    position: static;
+}
+
+#fb-share-button:hover {
+    cursor: pointer;
+    background: #213A6F
+}
+
+#fb-share-button svg {
+    width: 14px;
+    fill: white;
+    vertical-align: middle;
+    border-radius: 2px
+}
+
+#fb-share-button span {
+    vertical-align: middle;
+    color: white;
+    font-size: 12px;
+    padding: 0 3px
+}
+
+#fb-like-button {
+	margin-top: 10px;
+    background: #4080FF;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 1px 5px;
+    display: inline-block;
+    position: static;
+}
+
+#fb-like-button:hover {
+    cursor: pointer;
+    background: #0558FC
+}
+
+#fb-like-button svg {
+    width: 14px;
+    fill: white;
+    vertical-align: middle;
+    border-radius: 2px
+}
+
+#fb-like-button span {
+    vertical-align: middle;
+    color: white;
+    font-size: 12px;
+    padding: 0 3px
+}
+
+#tweet-button {
+	margin-top: 10px;
+    background: #1B95E0;
+    border-radius: 3px;
+    font-weight: 400;
+    padding: 1px 5px;
+    display: inline-block;
+    position: static;
+}
+
+#tweet-button:hover {
+    cursor: pointer;
+    background: #0C7ABF
+}
+
+#tweet-button svg {
+    width: 14px;
+    fill: white;
+    vertical-align: middle;
+    border-radius: 2px
+}
+
+#tweet-button span {
+    vertical-align: middle;
+    color: white;
+    font-size: 12px;
+    padding: 0 3px
+}
