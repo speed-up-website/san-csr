@@ -1,11 +1,13 @@
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, 'Roboto', sans-serif;    
   font-size:14px;
   height:100%;
   margin: 0px;
   padding: 0px;
   margin: 0px 0px 100px;
   height:auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Toolbar area */
@@ -524,19 +526,13 @@ md-progress-linear {
 display: none !important;
 }
 
-nav a.navbar-brand>img{display:inline;margin-left:90px;margin-right:4px;margin-top:-2px}
+nav a.navbar-brand>span{display:inline; margin-left:200px; margin-right:4px;margin-top:-2px}
 
 .dropdown:hover .dropdown-menu {
 display: block;    
 }
 
 /* Facebook share, like and Twitter button */
-
-body {		    
-    font-family: Helvetica;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
 
 #fb-share-button {
 	margin-top: 13px;
