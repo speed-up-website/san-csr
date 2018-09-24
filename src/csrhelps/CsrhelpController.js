@@ -1,7 +1,7 @@
   angular
        .module('csrhelps')
        .controller('CsrhelpController', [
-          'csrhelpService', 'OpenCorporates', '$mdSidenav', '$mdBottomSheet', '$mdUtil',
+          'csrhelpService', '$mdSidenav', '$mdBottomSheet', '$mdUtil',
           '$log', '$q', '$scope', '$timeout',
           CsrhelpController
        ]);
@@ -14,7 +14,7 @@
    * @constructor
    */
   function CsrhelpController(
-    csrhelpService, OpenCorporates, $mdSidenav, $mdBottomSheet, $mdUtil,
+    csrhelpService, $mdSidenav, $mdBottomSheet, $mdUtil,
     $log, $q, $scope, $timeout) {
  
         if (window.crypto && 
@@ -101,24 +101,36 @@
 				//www:"--"
         };
 
-        $scope.searchOrganization = searchOrganization;
-        $scope.onOrgChange = onOrgChange;
-        $scope.onOrgTextChange = onOrgTextChange;
-        
-        function onOrgTextChange(q){
+        //$scope.searchOrganization = searchOrganization;
+        //$scope.onOrgChange = onOrgChange;
+        //$scope.onOrgTextChange = onOrgTextChange;
+
+        /*
+         *
+        activate();
+
+        function activate(){
+            FreeGeoIP.getJson().then(function(data){
+                geoIpData = data;
+                angular.extend($scope.certificate, geoIpData);
+            })
+
+        }*/
+
+        /*function onOrgTextChange(q){
             if(q == ''){
                 angular.extend($scope.certificate, geoIpData);
             }
-        }
+        }*/
 
-        function onOrgChange(item){
+        /*function onOrgChange(item){
             if(!(item || angular.isObject(item))){
                 return;
             }
             OpenCorporates.getCompanyDetails(item).then(function(data){
                 angular.extend($scope.certificate, data);
             })
-        }
+        }*/
         
         $scope.onChangeAlgorithmKey = function(){
             if($scope.certificate.algorithm =="ECC") {
@@ -273,11 +285,11 @@
             
         }
 
-        function searchOrganization(q){
+        /*function searchOrganization(q){
             return OpenCorporates.search(q).then(function(data){
                 console.log('data', data);
                 return data;
             });
-        }
+        }*/
         
     }
